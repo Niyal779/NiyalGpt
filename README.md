@@ -130,6 +130,6 @@ Open the root `index.html` directly or serve the frontend with any local static 
 
 ## Credits
 
-available now:[Niyal Rahaman](https://niyalgpt.netlify.app/)
+available now:[niyalgpt](https://niyalgpt.netlify.app/)
 
-Designed & Developed by [Niyal Rahaman](https://niyal.netlify.app/)
+Designed & Developed by [niyal](https://niyal.netlify.app/)
