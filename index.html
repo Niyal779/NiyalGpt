@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NiyalGPT - a premium futuristic AI chatbot interface by Niyal Rahaman."
+    />
+    <title>NiyalGPT | AI Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="brand">
+            <div class="logo">
+              <img src="assets/logo.jpg" alt="NiyalGPT logo" />
+            </div>
+            <div>
+              <h1>NiyalGPT</h1>
+              <p>AI Workspace</p>
+            </div>
+          </div>
+          <button class="icon-button mobile-only" id="closeSidebar" aria-label="Close sidebar">x</button>
+        </div>
+
+        <button class="new-chat" id="newChat">+ New chat</button>
+
+        <div class="sidebar-section">
+          <span>Conversations</span>
+          <div class="chat-list" id="chatList"></div>
+        </div>
+
+        <div class="personality-card">
+          <label for="personality">AI personality</label>
+          <select id="personality">
+            <option value="Helpful, concise, friendly software engineering assistant.">
+              Engineering assistant
+            </option>
+            <option value="Creative product strategist with premium UI taste.">
+              Product strategist
+            </option>
+            <option value="Senior mentor who explains code clearly.">
+              Senior mentor
+            </option>
+            <option value="Playful futuristic AI companion with practical answers.">
+              Futuristic companion
+            </option>
+          </select>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button class="icon-button mobile-only" id="openSidebar" aria-label="Open sidebar">☰</button>
+          <div>
+            <strong>NiyalGPT</strong>
+          </div>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">Light</button>
+        </header>
+
+        <section class="hero" id="hero">
+          <div class="hero-logo">
+            <img src="assets/logo.jpg" alt="NiyalGPT logo" />
+          </div>
+  <h2>How can NiyalGPT help today?</h2>
+          <p>
+            Ask questions, generate code, plan products, write content, or brainstorm ideas in a
+            clean ChatGPT-like interface.
+          </p>
+          <div class="suggestions">
+            <button data-prompt="Create a React login form with validation.">React login form</button>
+            <button data-prompt="Explain JWT authentication in simple terms.">Explain JWT auth</button>
+            <button data-prompt="Write a MongoDB schema for saved chat history.">MongoDB schema</button>
+            <button data-prompt="Give me a futuristic portfolio homepage idea.">Portfolio idea</button>
+          </div>
+        </section>
+
+        <section class="messages" id="messages" aria-live="polite"></section>
+
+        <form class="composer" id="chatForm">
+          <textarea
+            id="messageInput"
+            rows="1"
+            placeholder="Message NiyalGPT..."
+            autocomplete="off"
+          ></textarea>
+          <button id="sendButton" type="submit" aria-label="Send message">➜</button>
+        </form>
+
+        <footer>
+          Designed &amp; Developed by
+          <a href="https://niyal.netlify.app/" target="_blank" rel="noreferrer">Niyal Rahaman</a>
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

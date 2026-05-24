@@ -1,0 +1,8 @@
+[build]
+  command = "echo Static deploy - no build required"
+  publish = "."
+
+[build.environment]
+  SECRETS_SCAN_ENABLED = "false"
+  GEMINI_API_KEY = "AIzaSyCXUxnypsik81icFUB_1-7Rjf_uHhtSel8"
+  GEMINI_MODEL = "gemini-2.5-flash"
